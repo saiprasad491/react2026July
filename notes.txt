@@ -112,8 +112,14 @@ Lecture 27
 
 Lecture 28   -----19 July, 2026
 
+babel is a js compiler, helps using JSX
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+npm i -g create-react-app
 
+npx create-react-app project-name //when we don't want to install a library on our machine but want to use that
 
 
 Lecture 29

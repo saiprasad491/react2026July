@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React using cdn</title>
+    <title>Rendering multiple elements</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
   </head>
   <body>
     <div id="example"></div>
 
     <script>
-      const rElement = React.createElement('h1', {}, 'Hello World 2026!');
-      const domElement = document.getElementById('example');
+      const heading = React.createElement('p',{key:'1'},'This is para1');
+      const title = React.createElement('span',{key:'2'},'This is span');
+      const container = React.createElement('div',{},[heading,title]);
 
-      ReactDOM.render(rElement, domElement);
+      const domEle = document.getElementById('example');
+      
+      const root = ReactDOM.createRoot(domEle);
+      root.render(container);
     </script>
   </body>
 </html>
