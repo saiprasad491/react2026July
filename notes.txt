@@ -122,8 +122,13 @@ npm i -g create-react-app
 npx create-react-app project-name //when we don't want to install a library on our machine but want to use that
 
 
-Lecture 29
+Lecture 29    -----19 July, 2026
 
+create-react-app my-app --template typescript //to create  react typescript project
+
+npm build
+
+React is developed and maintained by Facebook.
 
 
 Lecture 30
