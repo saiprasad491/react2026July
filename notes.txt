@@ -131,8 +131,25 @@ npm build
 React is developed and maintained by Facebook.
 
 
-Lecture 30
+Lecture 30    -----19 July, 2026
 
+Project Flow
+|
+index.html  --> <div id="root"></div> (container to inject component)
+|
+index.js   --> root.render(<App/>)
+|
+App.js  --> export default function App() {
+              return (
+                <div>
+                  Saiprasad Sahoo
+                </div>
+              )
+            }
+
+Component Standard - 
+  folder name like 'header'
+  file names like 'Header.js'
 
 
 Lecture 31
